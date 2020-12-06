@@ -1,4 +1,5 @@
 from flask import Flask
+
 from bytefood.ext import site
 from bytefood.ext import config
 from bytefood.ext import toolbar
@@ -7,6 +8,7 @@ from bytefood.ext import migrate
 from bytefood.ext import cli
 from bytefood.ext import hooks
 from bytefood.ext import auth
+from bytefood.ext import admin
 
 
 def create_app():
@@ -14,6 +16,7 @@ def create_app():
     config.init_app(app)
     db.init_app(app)
     auth.init_app(app)
+    admin.init_app(app)
     migrate.init_app(app)
     cli.init_app(app)
     toolbar.init_app(app)

@@ -8,10 +8,15 @@ bytefood.egg-info/dependency_links.txt
 bytefood.egg-info/requires.txt
 bytefood.egg-info/top_level.txt
 bytefood/ext/__init__.py
+bytefood/ext/auth/__init__.py
+bytefood/ext/auth/commands.py
+bytefood/ext/auth/models.py
 bytefood/ext/cli/__init__.py
 bytefood/ext/config/__init__.py
 bytefood/ext/db/__init__.py
 bytefood/ext/db/models.py
+bytefood/ext/hooks/__init__.py
+bytefood/ext/migrate/__init__.py
 bytefood/ext/site/__init__.py
 bytefood/ext/site/controllers.py
 bytefood/ext/site/main.py
