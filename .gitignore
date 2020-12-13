@@ -357,3 +357,6 @@ bytefood/bytefood.db
 
 # vscode
 .vscode/
+
+# secrets
+bytefood/secrets.toml
