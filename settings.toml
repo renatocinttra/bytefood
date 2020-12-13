@@ -1,0 +1,37 @@
+[default]
+DEBUG = false
+FLASK_ADMIN_SWATCH = "flatly"
+ADMIN_NAME = "Bytefood"
+ADMIN_TEMPLATE_MODE = "bootstrap2"
+EXTENSIONS = [
+    "bytefood.ext.db:init_app",
+    "bytefood.ext.auth:init_app",
+    "bytefood.ext.admin:init_app",
+    "bytefood.ext.migrate:init_app",
+    "bytefood.ext.cli:init_app",
+    "bytefood.ext.site:init_app",
+    "bytefood.ext.hooks:init_app"
+]
+
+[development]
+DEBUG = true
+SQLALCHEMY_DATABASE_URI = "sqlite:///bytefood.db"
+SQLALCHEMY_TRACK_MODIFICATIONS = false
+DEBUG_TB_TEMPLATE_EDITOR_ENABLE = true
+DEBUG_TB_PROFILER_ENABLE = true
+DEBUG_TB_INTERCEPT_REDIRECTS = false
+ADMIN_NAME = "Bytefood [Dev]"
+EXTENSIONS = [
+    "bytefood.ext.db:init_app",
+    "bytefood.ext.auth:init_app",
+    "bytefood.ext.admin:init_app",
+    "bytefood.ext.migrate:init_app",
+    "bytefood.ext.cli:init_app",
+    "bytefood.ext.toolbar:init_app",
+    "bytefood.ext.site:init_app",
+    "bytefood.ext.hooks:init_app"
+]
+
+[production]
+SQLALCHEMY_TRACK_MODIFICATIONS = false
+SQLALCHEMY_DATABASE_URI = "mysql://..."
